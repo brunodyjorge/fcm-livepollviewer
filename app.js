@@ -28,6 +28,7 @@ Office.onReady(() => {
     setup.classList.remove("hidden");
     viewer.classList.add("hidden");
     urlInput.value = localStorage.getItem("pollUrl") || "";
+    pollFrame.src = "";
   });
 
   function showViewer(url) {
