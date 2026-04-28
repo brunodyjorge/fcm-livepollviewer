@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:type="ContentApp">
+
+  <Id>8d9b6d59-15a4-4a3c-9d1d-123456789abc</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>FCM Unicamp</ProviderName>
+  <DefaultLocale>pt-BR</DefaultLocale>
+
+  <DisplayName DefaultValue="FCM Live Poll Viewer" />
+  <Description DefaultValue="Exibe uma página web dinâmica dentro de um slide do PowerPoint." />
+
+  <Hosts>
+    <Host Name="Presentation" />
+  </Hosts>
+
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://SEU-DOMINIO.com/fcm-live-poll-addin/index.html" />
+    <RequestedWidth>960</RequestedWidth>
+    <RequestedHeight>540</RequestedHeight>
+  </DefaultSettings>
+
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

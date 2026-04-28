@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>FCM Live Poll Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+  <div id="setup">
+    <h1>FCM Live Poll Viewer</h1>
+    <p>Cole abaixo a URL da página de resultados da enquete.</p>
+
+    <input id="urlInput" type="url" placeholder="https://seu-site.lovable.app/resultados" />
+    <button id="loadButton">Carregar no slide</button>
+
+    <p class="hint">A página precisa estar em HTTPS e permitir exibição em iframe.</p>
+  </div>
+
+  <div id="viewer" class="hidden">
+    <button id="configButton">⚙ Trocar URL</button>
+    <iframe id="pollFrame" allowfullscreen></iframe>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
