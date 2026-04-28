@@ -17,7 +17,7 @@
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://SEU-DOMINIO.com/fcm-live-poll-addin/index.html" />
+    <SourceLocation DefaultValue="https://brunodyjorge.github.io/fcm-livepollviewer/index.html" />
     <RequestedWidth>960</RequestedWidth>
     <RequestedHeight>540</RequestedHeight>
   </DefaultSettings>
