@@ -3,23 +3,27 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: Arial, sans-serif;
-  background: #1a1e3a;
-  color: white;
+  background: #ffffff;
+  color: #1a1e3a;
+  overflow: hidden;
 }
 
 #setup {
   box-sizing: border-box;
+  width: 100vw;
   height: 100vh;
   padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  background: #ffffff;
 }
 
 h1 {
   margin: 0;
   font-size: 28px;
+  color: #1a1e3a;
 }
 
 p {
@@ -31,7 +35,7 @@ input {
   padding: 14px;
   font-size: 16px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #ddd;
 }
 
 button {
@@ -39,8 +43,9 @@ button {
   font-size: 16px;
   border: none;
   border-radius: 8px;
-  background: #5a1544;
-  color: white;
+  background: hsl(35 100% 52%);
+  color: #1a1e3a;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -50,33 +55,48 @@ button:hover {
 
 .hint {
   font-size: 13px;
-  opacity: 0.75;
+  opacity: 0.7;
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 #viewer {
   width: 100vw;
   height: 100vh;
-  position: relative;
-  background: #000;
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  overflow: hidden;
 }
 
 #pollFrame {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   border: none;
   background: white;
+  display: block;
+  overflow: hidden;
 }
 
 #configButton {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  z-index: 10;
-  font-size: 13px;
-  padding: 8px 12px;
-  opacity: 0.8;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 9999;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#configButton:hover {
+  background: rgba(0, 0, 0, 0.22);
+  color: rgba(0, 0, 0, 0.65);
+  opacity: 1;
 }
